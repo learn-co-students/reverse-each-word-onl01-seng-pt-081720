@@ -21,3 +21,8 @@ end
 #call on array_sentence to do the action for each word item
 #reverse the items/words in the array and put it inside the new_sentence array
 #turn this array into a string
+
+def reverse_each_word(sentence)
+  array_sentence = sentence.split(" ")
+  array_sentence.collect {|word| word.reverse}.join(" ")
+end
