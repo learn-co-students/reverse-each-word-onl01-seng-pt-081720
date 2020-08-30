@@ -8,8 +8,8 @@ def reverse_each_word(string)
       new_string << word.reverse
     else
       new_string << word.reverse + " "
+      counter += 1
     end
-    counter += 1
   end
 #  return new_string
 end
