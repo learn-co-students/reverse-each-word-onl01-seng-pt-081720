@@ -1,13 +1,15 @@
 def reverse_each_word(string)
   new_array = string.split(" ")
   new_string = ""
+  counter = 0
   
   new_array.each do |word|
-    if (word == new_array.length)
+    if (counter == new_array.length)
       new_string << word.reverse
     else
       new_string << word.reverse + " "
     end
+    counter += 1
   end
   
   return new_string
