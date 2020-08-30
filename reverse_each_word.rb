@@ -3,7 +3,7 @@ def reverse_each_word(string)
   new_string = ""
   counter = 1
   
-  new_array.each do |word|
+  new_array.collect do |word|
     if (counter == new_array.length)
       new_string << word.reverse
     else
@@ -11,5 +11,5 @@ def reverse_each_word(string)
     end
     counter += 1
   end
-  return new_string
+#  return new_string
 end
