@@ -4,12 +4,7 @@ def reverse_each_word(string)
   counter = 1
   
   new_array.collect do |word|
-    if (counter == new_array.length)
-      new_string << word.reverse
-    else
-      new_string << word.reverse + " "
-      counter += 1
-    end
+    new_string << word.reverse + " "
   end
 #  return new_string
 end
